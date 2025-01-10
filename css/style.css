@@ -1,0 +1,140 @@
+html {
+    scroll-behavior: smooth;
+}
+
+
+.navbar-custom {
+    background-color: #1f91b1; 
+    color: #ffffff;
+    margin-right: 10px;
+    position: fixed; 
+    width: 100%; 
+    z-index: 1000; 
+    top: 0; 
+    left: 0; 
+}
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-nav .nav-link {
+    color: #ffffff; 
+    margin-right: 10px; 
+}
+.navbar-custom .navbar-nav .nav-link:hover {
+    background-color: #48b1ce; 
+    border-radius: 5px; 
+    padding: 5px 10px; 
+}
+
+.banner {
+    background-image: url('../img/banner.webp'); 
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+
+}
+.banner h1 {
+    background-color: #9fa2a2cc;
+    padding: 25px;
+    border-radius: 10px;
+}
+.banner h1 {
+    animation: slideInFromLeft 1s ease-out;
+}
+.banner button {
+    animation: appear 2s ease-out;
+    margin-top: 20px;
+}
+
+.section {
+    padding: 50px 0;
+}
+.info-img {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+}
+.info-description {
+    background-color: #f8f9fa;
+    padding: 20px;
+}
+
+.bmi-section {
+    background-color: #ddd;
+    padding: 50px 0;
+    text-align: center;
+}
+.bmi-form {
+    margin: auto;
+    padding: 20px;
+    width: 90%;
+    max-width: 800px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.result {
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #4CAF50;
+    animation: fadeIn 2s ease-out;
+}
+
+.contact-section {
+    padding: 50px 0;
+    background-color: #f8f9fa;
+}
+.map {
+    height: 100px; 
+    width: 100%;
+}
+.contact-form {
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+
+.footer {
+    background-color: #1f91b1; 
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+.footer a {
+    color: white;
+    margin: 0 10px; 
+    font-size: 24px; 
+}
+.footer a:hover {
+    color: #48b1ce; 
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

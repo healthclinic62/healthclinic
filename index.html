@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Healthcare Clinic</title>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://kit.fontawesome.com/10b2fd9b1a.js" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container">
+            <a class="navbar-brand" href="#">Healthcare Clinic</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto"> <!-- ml-auto class pushes the nav items to the right -->
+                    <a class="nav-item nav-link active" href="#home">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link" href="#BMI">BMI Calculator</a>
+                    <a class="nav-item nav-link" href="#contact">Contact Form</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="banner" id="home">
+        <h1>Welcome to Healthcare Clinic</h1>
+        <button class="btn btn-primary">Learn More</button>
+    </div>
+
+    <!-- Aboubt us Section -->
+    <div class="section">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="img/about.png" class="info-img" alt="Healthcare Service">
+                </div>
+                <div class="col-md-6 info-description">
+                    <h2>About Us</h2>
+                    <p>Our clinic is dedicated to providing comprehensive healthcare with a patient-centered approach. Established by a team of experienced medical professionals, we aim to offer top-tier medical services in a compassionate and caring environment. Our state-of-the-art facilities are equipped with the latest technology to ensure accurate diagnostics and effective treatments. We believe in building lasting relationships with our patients, empowering them with knowledge and supporting them throughout their healthcare journey.</p>
+                    
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 info-description">
+                    <h2>Our Services</h2>
+                    <p>We offer a wide range of medical services including general practice, preventive care, specialist consultations, and chronic disease management. Our team of skilled physicians and nurses are committed to delivering personalized care tailored to each patient's unique needs. Additionally, we provide on-site laboratory and imaging services for your convenience. We prioritize your health and well-being, ensuring access to quality healthcare whenever you need it. Visit us to experience compassionate care in a welcoming atmosphere.</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="img/service.jpeg" class="info-img" alt="Healthcare Facility">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- BMI Calculator Section -->
+    <div class="bmi-section" id="BMI">
+        <div class="bmi-form">
+            <h2>BMI Calculator</h2>
+            <form id="bmiForm">
+                <div class="form-group">
+                    <label for="weight">Weight (in kilograms)</label>
+                    <input type="number" class="form-control" id="weight" required>
+                </div>
+                <div class="form-group">
+                    <label for="height">Height (in centimeters)</label>
+                    <input type="number" class="form-control" id="height" required>
+                </div>
+                <button type="button" class="btn btn-primary" onclick="calculateBMI()">Calculate</button>
+            </form>
+            <p class="result" id="bmiResult"></p>
+        </div>
+    </div>
+
+    <!-- Contact and Map Section -->
+    <div class="contact-section" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Contact Us</h2>
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message:</label>
+                            <textarea class="form-control" id="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+                <div class="col-md-6">
+                    <h2>Visit Us</h2>
+                    <p>123 Clinic Street, Sydney, NSW 2000</p>
+                    <p>Phone: (02) 1234 5678</p>
+                    <p>Email: contact@healthcareclinic.com.au</p>
+                    <div class="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3312.3129948527556!2d151.20929551520976!3d-33.86881998065294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12ae32c2d10dd3%3A0x701f571f436a68ab!2sSydney%20Opera%20House!5e0!3m2!1sen!2sau!4v1597139085349!5m2!1sen!2sau" width="600" height="310" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+     <!-- Footer Section -->
+     <footer class="footer">
+        <div class="container">
+            <p>Follow us on social media</p>
+            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <p>&copy; 2025 Healthcare Clinic. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
